@@ -1,0 +1,38 @@
+@each $btn, $color in $ui-colors {
+    .btn--#{$btn}.theme__colors {
+      background-color: #{$color};
+      color: $text-light;
+      border: none;
+      border-radius: $border-radius;
+      font-family: $font-primary;
+      font-size: 1rem;
+      text-transform: capitalize;
+      @include mediaq(small-bp) {
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      @include mediaq(medium-bp) {
+        margin-right: 3%;
+        padding: 6px 30px;
+      }
+    }
+  }
+
+.grid {
+  @include bem-e(row) {
+    @include bem-m(12) {
+      min-width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  @include bem-e(col) {
+    @include bem-m(12) {
+      @include mediaq(small-bp) {
+        @include flexbox($flex:null, $direction: column);
+      }
+    }
+  }
+}

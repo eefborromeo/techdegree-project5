@@ -1,0 +1,129 @@
+//==============================
+// Links
+//==============================
+
+%nav-link {
+  color: $text-gray;
+  font-weight: $font--regular;
+  text-decoration: none;
+  @include mediaq(small-bp) {
+    font-size: 1.375rem;
+  }
+  @include mediaq(medium-bp) {
+    padding: 5px 10px;
+    }
+}
+
+%nav-link-style {
+  &:hover {
+    background-color: $primary-color;
+    color: $text-light;
+    font-weight: $font--regular;
+    border-radius: $border-radius;
+    padding: 5px 10px;
+    @include mediaq(small-bp) {
+      padding: 10px 25px;
+    }
+  }
+}
+
+
+//==============================
+// Images
+//==============================
+
+%logo {
+  @include mediaq(small-bp) {
+    @include flexbox($justify: center);
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+%avatar {
+  @include mediaq(small-bp) {
+    width: 35%;
+    margin: 10px auto;
+  }
+  @include mediaq(medium-bp) {
+    @include flexbox($align: center);
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+%frame {
+  @include mediaq(small-bp) {
+    @include flexbox;
+     width: 98%;
+     margin: 10px auto;
+   }
+   @include mediaq(medium-bp) {
+     max-width: 100%;
+     padding: 10px 20px;
+     margin-left: 50px;
+     margin-right: auto;
+     margin-bottom: 20px;
+   }
+}
+//==============================
+// Headlines
+//==============================
+
+%headline-primary {
+  color: $primary-color;
+  font-weight: $font--regular;
+  @include mediaq(small-bp) {
+    margin-left: 30px;
+    margin-bottom: 50px;
+    line-height: 1
+  }
+}
+
+%headline-second {
+  font-size: 1.125rem;
+  font-weight: $font--light;
+  color: $text-gray;
+  @include mediaq(small) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  @include mediaq(medium-bp) {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+//==============================
+// Nav items
+//==============================
+
+  %nav {
+    @include mediaq(small-bp){
+      @include flexbox($direction: column);
+      text-align: center;
+    }
+    @include mediaq(medium-bp){
+      @include flexbox($flex: inline-flex);
+      font-size: 1.125rem;
+      margin-left: 60%;
+    }
+  }
+
+//==============================
+// Grid
+//==============================
+
+%grid {
+  @include mediaq(small-bp) {
+    @include flexbox($direction: column, $justify: center);
+  }
+  @include mediaq(medium-bp) {
+    @include flexbox;
+    border-radius: $border-radius;
+  }
+  width: 100%;
+  padding: 5px;
+}

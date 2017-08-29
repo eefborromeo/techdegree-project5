@@ -1,0 +1,14 @@
+.grid {
+  @include bem-e(col) {
+    @include bem-m(6) {
+      .img {
+        @include bem-m(frame) {
+          @extend %frame;
+        }
+        @include bem-m(avatar) {
+          @extend %avatar;
+        }
+      }
+    }
+  }
+}

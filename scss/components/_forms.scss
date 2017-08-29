@@ -1,0 +1,44 @@
+// Avatar
+
+.form {
+  @include flexbox($direction: column);
+  width: 100%;
+  .img {
+    @include bem-m(avatar) {
+      @extend %avatar;
+      margin: 30px auto 0;
+    }
+  }
+  @include bem-e(label) {
+    @include bem-m(hidden) {
+      display: none;
+    }
+  }
+  @include bem-e(input) {
+    margin: 20px auto 15px;
+    border: none;
+    border-bottom: 8px solid $primary-color;
+    border-radius: 5px;
+    font-family: $font-primary;
+    font-weight: $font--regular;
+    color: $text-gray;
+    font-size: 1rem;
+    @include mediaq(small-bp) {
+      width: 95%;
+    }
+    @include mediaq(medium-bp) {
+      width: 80%;
+    }
+  }
+  .btn--default {
+    @include mediaq(small-bp) {
+      width: 100%;
+      margin-top: 5px;
+    }
+    @include mediaq(medium-bp) {
+      width: 40%;
+      margin: 10px auto;
+      padding: 6px 30px;
+    }
+  }
+}

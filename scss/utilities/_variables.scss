@@ -1,0 +1,83 @@
+//==============================
+// Fonts
+//==============================
+
+$font-url: 'https://fonts.googleapis.com/css?family=Lato:100,400,700';
+$font-primary: 'Lato', sans-serif;
+
+$font--light: 100;
+$font--regular: 400;
+$font--bold: 700;
+
+//==============================
+// Breakpoints
+//==============================
+
+$small-bp    : 1px;
+$medium-bp   : 768px;
+
+//==============================
+// Colors
+//==============================
+
+  //Descriptive
+
+  $white              : #fff;
+  $black              : #000;
+  $gray               : lighten($black, 65%);
+
+  $turquoise          : #50e3c2;
+  $malibu             : #47deff;
+  $de-york            : #78c58f;
+  $pink-salmon        : #ff8f93;
+  $vivid-tangerine    : #ff9c7e;
+  $mauve              : #bd9cff;
+  $mantis             : #7fd079;
+  $chetwode-blue      : #838edc;
+  $harvest-gold       : #e0b47c;
+  $lavender           : #ce86e9;
+  $granny-smith-apple : #9de997;
+  $copperfield        : #d9856d;
+  $neptune            : #78c0ab;
+
+  //Functional
+
+  $primary-color      : $turquoise;
+  $secondary-color    : $malibu;
+
+  $text-light         : $white;
+  $text-dark          : $black;
+  $text-gray          : $gray;
+
+  $link-default       : $turquoise;
+
+  // Maps
+
+  $ui-colors: (
+    default    : $secondary-color,
+    success    : $de-york,
+    error      : $pink-salmon,
+    warning    : $vivid-tangerine,
+    info       : $mauve
+  );
+
+  $theme-color: (
+    12     : $mantis,
+    6      : $chetwode-blue,
+    4      : $harvest-gold,
+    3      : $lavender,
+    5      : $granny-smith-apple,
+    7      : $copperfield,
+    8      : $neptune
+  );
+
+//==============================
+// Others
+//==============================
+
+  // Buttons
+  $border-radius: 5px;
+
+  // Grid
+  $container-width    : 80%;
+  $grid-col-count     : 12;

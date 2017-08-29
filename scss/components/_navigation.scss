@@ -1,0 +1,44 @@
+.grid {
+  // Logo
+  @include bem-e(col) {
+    @include bem-m(3) {
+      .link {
+        @extend %logo;
+      }
+    }
+
+    // Navigation
+    @include bem-m(9){
+      .nav {
+          @extend %nav;
+          @include bem-e(item) {
+            @include mediaq(small-bp){
+              margin-bottom: 30px;
+            }
+            @include mediaq(medium-bp){
+            @include flexbox($flex: inline-flex, $align: center);
+              margin-left: 20px;
+            }
+            a {
+              @extend %nav-link;
+              @extend %nav-link-style;
+            }
+          }
+        }
+    }
+
+    // Text
+    @include bem-m(12) {
+      .card {
+        p {
+          color: $text-gray;
+          font-size: 1.375rem;
+          font-weight: $font--regular;
+          @include mediaq(medium-bp) {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}

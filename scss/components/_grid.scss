@@ -1,0 +1,46 @@
+.grid {
+  @include bem-e(row) {
+    @include mediaq(small-bp){
+      @include flexbox($direction: column);
+        width: 100%;
+        margin: 15px auto;
+    }
+    @include mediaq(medium-bp) {
+      @include flexbox;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 25px;
+    }
+  }
+  @for $i from 3 through $grid-col-count {
+    @include bem-e(col) {
+      @include bem-m($i) {
+        @extend %grid;
+        @include mediaq(small-bp) {
+          margin: 5px auto;
+        }
+        @include mediaq(medium-bp) {
+          width: #{$i}0%;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@each $num, $color in $theme-color {
+  .grid__col--#{$num}.theme__colors {
+    background-color: #{$color};
+    @include flexbox($flex: null, $justify: center);
+    color: $text-light;
+    @include mediaq(small-bp) {
+      text-align: center;
+    }
+  }
+}
+
+.centered {
+  @include flexbox($justify: center);
+  margin: 5px auto 10px;
+}

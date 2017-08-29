@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-weight: $font--light;
+}
+
+.container {
+  @include flexbox($direction: column, $justify: center);
+  font-family: $font-primary;
+  max-width: $container-width;
+  margin: auto;
+  overflow-x: hidden;
+  @include mediaq(medium-bp) {
+    line-height: 1.8;
+  }
+}

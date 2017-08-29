@@ -1,0 +1,54 @@
+//==============================
+// Media Queries
+//==============================
+
+@mixin mediaq($bp) {
+  @if $bp == "small-bp" {
+    @media (min-width: $small-bp) and (max-width: $medium-bp) {
+      @content;
+    }
+  }
+  @else if $bp == "medium-bp" {
+    @media (min-width: $medium-bp + 1) {
+      @content;
+    }
+  }
+}
+
+//==============================
+// Flexbox Settings
+//==============================
+
+@mixin flexbox($flex: flex, $direction: null, $wrap: null, $justify: null, $align: null) {
+  display: $flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-order($value) {
+  order: $value;
+}
+
+@mixin flex-short($val1: 0, $val2: 1, $val3: auto) {
+  flex-grow: $val1;
+  flex-shrink: $val2;
+  flex-basis: $val3;
+}
+
+//==============================
+// BEM Selectors
+//==============================
+
+@mixin bem-e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin bem-m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}

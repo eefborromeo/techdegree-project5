@@ -1,0 +1,54 @@
+// Headlines
+.headline--secondary {
+  @extend %headline-second;
+}
+
+.headline--primary {
+  @extend %headline-primary;
+}
+
+// Content
+
+.grid {
+  @include bem-e(col) {
+    @include bem-m(8) {
+      .card {
+        p {
+          color: $text-gray;
+          font-weight: $font--regular;
+          font-size: 1.125rem;
+          line-height: 1.8;
+          @include mediaq(small-bp) {
+            width: 100%;
+          }
+        }
+        a {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+        .blockquote {
+          @include mediaq(small-bp) {
+            width: 85%;
+            margin-left: 0;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+          @include mediaq(medium-bp) {
+            width: 63%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+          }
+          font-weight: $font--bold;
+          margin-left: 0;
+          border-collapse: collapse;
+          border-left: 12px solid $primary-color;
+          border-radius: $border-radius;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
