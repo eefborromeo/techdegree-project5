@@ -1,27 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,400,700");
-.grid__col--9 .nav__item a {
+.nav__item a {
   color: #a6a6a6;
   font-weight: 400;
   text-decoration: none; }
   @media (min-width: 1px) and (max-width: 768px) {
-    .grid__col--9 .nav__item a {
+    .nav__item a {
       font-size: 1.375rem; } }
   @media (min-width: 769px) {
-    .grid__col--9 .nav__item a {
+    .nav__item a {
       padding: 5px 10px; } }
 
-.grid__col--9 .nav__item a:hover {
+.nav__item a:hover {
   background-color: #50e3c2;
   color: #fff;
   font-weight: 400;
   border-radius: 5px;
   padding: 5px 10px; }
   @media (min-width: 1px) and (max-width: 768px) {
-    .grid__col--9 .nav__item a:hover {
+    .nav__item a:hover {
       padding: 10px 25px; } }
 
 @media (min-width: 1px) and (max-width: 768px) {
-  .grid__col--3 .link {
+  .link {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -72,12 +72,12 @@
       margin-bottom: 5px; } }
 
 @media (min-width: 1px) and (max-width: 768px) {
-  .grid__col--9 .nav {
+  .nav {
     display: flex;
     flex-direction: column;
     text-align: center; } }
 @media (min-width: 769px) {
-  .grid__col--9 .nav {
+  .nav {
     display: inline-flex;
     font-size: 1.125rem;
     margin-left: 60%; } }
@@ -828,19 +828,20 @@ p {
       padding: 6px 30px; } }
 
 @media (min-width: 1px) and (max-width: 768px) {
-  .grid__col--9 .nav__item {
+  .nav__item {
     margin-bottom: 30px; } }
 @media (min-width: 769px) {
-  .grid__col--9 .nav__item {
+  .nav__item {
     display: inline-flex;
     align-items: center;
     margin-left: 20px; } }
-.grid__col--12 .card p {
+
+.card p {
   color: #a6a6a6;
   font-size: 1.375rem;
   font-weight: 400; }
   @media (min-width: 769px) {
-    .grid__col--12 .card p {
+    .card p {
       width: 70%; } }
 
 /*# sourceMappingURL=styles.css.map */
