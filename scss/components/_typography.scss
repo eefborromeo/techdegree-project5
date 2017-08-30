@@ -38,6 +38,7 @@
           }
           @include mediaq(medium-bp) {
             width: 63%;
+            font-style: italic;
             margin-top: 40px;
             margin-bottom: 30px;
           }
