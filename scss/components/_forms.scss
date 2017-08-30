@@ -7,6 +7,9 @@
     @include bem-m(avatar) {
       @extend %avatar;
       margin: 30px auto 0;
+      @include mediaq(medium-bp) {
+        height: 25%;
+      }
     }
   }
   @include bem-e(label) {
