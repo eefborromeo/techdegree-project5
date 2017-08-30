@@ -1,9 +1,11 @@
   // Logo
-  .link {
-    @extend %logo;
+  .grid__col--3 {
+    .link {
+        @extend %logo;
+    }
   }
 
-    // Navigation
+  // Navigation
   .nav {
       @extend %nav;
       @include bem-e(item) {
